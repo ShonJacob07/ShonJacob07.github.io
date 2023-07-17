@@ -3,418 +3,366 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Montserrat:wght@400;900&family=Open+Sans:wght@400;500&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/898072a066.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-  
     <title>Lemon Caters</title>
 </head>
 <body>
 
-    <section id="header">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Lemon Catering</a>
-              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="toggler-icon top-bar"></span>
-                <span class="toggler-icon middle-bar"></span>
-                <span class="toggler-icon bottom-bar"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">ABOUT US</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#services">OUR SERVICES</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">GALLERY</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#testimonials">TESTIMONIALS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT US</a>
-                  </li>
-                  
-                </ul>
-               
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><span class="text-warning">Lemon</span> Caters</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-section">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleCaptions" class="carousel slide hero" data-bs-touch="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" data-mdb-touch="true">
+          <div class="carousel-item active" data-interval="3000" >
+            <img src="images/saile-ilyas-SiwrpBnxDww-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5>Lorem ipsum dolor sit</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam repellendus magnam recusandae doloremque quasi optio excepturi eum odio expedita nobis rem magni, quibusdam animi minima ratione quo eos vel esse?</p>
+              <p>
+                <a href="#about" class="btn btn-warning mt-3">Learn More</a>
+                <a href="#contact-section" class="btn btn-dark mt-3 ml-2" style="margin-left: 10px;"><i class="fa-solid fa-phone"></i> Contact Us</a>
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-interval="3000" >
+            <img src="images/chuttersnap-aEnH4hJ_Mrs-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5>Lorem ipsum dolor sit</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis laudantium modi ipsum animi alias in quasi quod! Totam obcaecati iure dolorem quo, explicabo eligendi provident reprehenderit repellat culpa corrupti consequatur.</p>
+              <p>
+                <a href="#about" class="btn btn-warning mt-3">Learn More</a>
+                <a href="#contact-section" class="btn btn-dark mt-3 ml-2" style="margin-left: 10px;"><i class="fa-solid fa-phone"></i> Contact Us</a>
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-interval="3000">
+            <img src="images/robert-mathews-xXaLfz6V9rQ-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5>Lorem ipsum dolor sit</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aut molestiae facilis reiciendis cupiditate! Voluptate enim, a nisi in veritatis sunt facere incidunt quidem necessitatibus reprehenderit magni ex ipsam pariatur?</p>
+              <p>
+                <a href="#about" class="btn btn-warning mt-3">Learn More</a>
+                <a href="#contact-section" class="btn btn-dark mt-3 ml-2" style="margin-left: 10px;"><i class="fa-solid fa-phone"></i> Contact Us</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+      <!-- <section id="about" class="about-section section-padding">
+        <div class="container">
+             <div class="row">
+                 <div class="col-lg-6 col-md-12 col-12">
+                    <div class="about-img">
+                        <img src="images/chuttersnap-aEnH4hJ_Mrs-unsplash.jpg" alt="" class="img-fluid">
+                    </div> 
+                </div> 
+                <div class="col-lg-12 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="about-text text-center">
+                        <h2><span class="text-warning">ABOUT</span> US</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod soluta impedit consequuntur architecto sunt in laborum repudiandae obcaecati rerum dolores, delectus pariatur suscipit quaerat eveniet voluptate incidunt reiciendis dolore at! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui dolor ea id assumenda ipsam hic cupiditate perspiciatis dolorum delectus alias eius vitae sint officiis fugit, deleniti rem laborum porro totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam, dicta nesciunt nostrum maiores, libero nemo culpa pariatur numquam perferendis labore dolores itaque, aliquam accusantium rerum repellendus aliquid perspiciatis nobis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quaerat tempore delectus ullam voluptas dignissimos molestiae, eaque nulla animi eum porro eius aliquid ad voluptatum nihil minus deleniti in laboriosam?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section> -->
+
+       <section id="about">
+        <div class="about-section section-padding">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-5 col-md-12 text-sec">
+                <h2><span class="text-warning">ABOUT</span> US</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod soluta impedit consequuntur architecto sunt in laborum repudiandae obcaecati rerum dolores, delectus pariatur suscipit quaerat eveniet voluptate incidunt reiciendis dolore at! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui dolor ea id assumenda ipsam hic cupiditate perspiciatis dolorum delectus alias eius vitae sint officiis fugit, deleniti rem laborum porro totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam, dicta nesciunt nostrum maiores, libero nemo culpa pariatur numquam perferendis labore dolores itaque, aliquam accusantium rerum repellendus aliquid perspiciatis nobis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quaerat tempore delectus ullam voluptas dignissimos molestiae, eaque nulla animi eum porro eius aliquid ad voluptatum nihil minus deleniti in laboriosam?</p>
+              </div>
+              <div class="col-lg-7 col-md-12 mb-lg-0 mb-5">
+                <div class="card border-0">
+                  <img src="images/chuttersnap-aEnH4hJ_Mrs-unsplash.jpg" class="img-fluid">
+                </div>
               </div>
             </div>
-          </nav>
+          </div>
+        </div>
+      </section> 
 
+      <section id="counter">
+        <section class="counter-section section-padding">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-md-4 mb-lg-0 mb-md-0 mb-5">
+                <h2 class="text-light">
+                  <span id="count1"></span>+
+                </h2>
+                <p><b>YEARS OF EXCELLENCE</b></p>
+              </div>
+              <div class="col-md-4 mb-lg-0 mb-md-0 mb-5">
+                <h2 class="text-light">
+                  <span id="count2"></span>+
+                </h2>
+                <p><b>CUSTOMERS</b></p>
+              </div>
+              <div class="col-md-4 mb-lg-0 mb-md-0 mb-5">
+                <h2 class="text-light">
+                  <span id="count3"></span>+
+                </h2>
+                <p><b>EVENTS COMPLETED</b></p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+
+
+      <section id="services" class="services-section section-padding">
+        <div class="conatiner">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>OUR <span class="text-warning">SERVICES</span></h2>
+                        <P>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Est harum ullam nostrum quae.</P>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-dark text-center bg-light pb-2">
+                      <img src="images/clothes-twined-top-wedding-altar_1304-3714.avif" class="card-img-top">
+                        <div class="card-body">
+                          <!-- <i class="fa-solid fa-ring"></i> -->
+                          <h3 class="card-title">Weddings</h3>
+                          <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, voluptatum! Quas non quasi laudantium quis adipisci, iure unde aperiam tempore, pariatur provident placeat illo ex enim illum? Saepe, inventore suscipit!</p>
+                          <button class="btn btn-warning text-dark">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-4">
+                  <div class="card text-dark text-center bg-light pb-2">
+                    <img src="images/birthday-cake-with-colored-candles-wooden-table-black-background-ai-generative_123827-24034.avif" class="card-img-top">
+                      <div class="card-body">
+                        <!-- <i class="fa-solid fa-cake-candles"></i> -->
+                        <h3 class="card-title">Anniversaries</h3>
+                        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, voluptatum! Quas non quasi laudantium quis adipisci, iure unde aperiam tempore, pariatur provident placeat illo ex enim illum? Saepe, inventore suscipit!</p>
+                        <button class="btn btn-warning text-dark">Read More</button>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-12 col-md-12 col-lg-4">
+                <div class="card text-dark text-center bg-light pb-2">
+                  <img src="images/happy-baby-playing_1328-3241.avif" class="card-img-top">
+                    <div class="card-body">
+                      <!-- <i class="fa-solid fa-baby"></i> -->
+                      <h3 class="card-title">Baby Showers</h3>
+                      <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, voluptatum! Quas non quasi laudantium quis adipisci, iure unde aperiam tempore, pariatur provident placeat illo ex enim illum? Saepe, inventore suscipit!</p>
+                      <button class="btn btn-warning text-dark">Read More</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+      </section>
+
+
+      
+      <section id="testimonial">
+        <div class="testimonial-section section-padding">
+          <div class="conatiner text-center">
+            <div class="text-container pb-4">
+              <h2>TESTIMONIALS</h2>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-lg-10 offset-lg-1">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" data-bs-touch="true">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="carousel-caption">
+                        <img class="img1" src="images/young-bearded-man-with-striped-shirt_273609-5677.avif">
+                        <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam non dolore deleniti eaque labore accusamus id autem quos. Culpa illo recusandae provident itaque pariatur quae dolorem ex reiciendis cum blanditiis?"</p>
+                        <h5>Shon</h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="carousel-caption">
+                        <img class="img1" src="images/young-bearded-man-with-striped-shirt_273609-5677.avif">
+                        <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam non dolore deleniti eaque labore accusamus id autem quos. Culpa illo recusandae provident itaque pariatur quae dolorem ex reiciendis cum blanditiis?"</p>
+                        <h5>Shon</h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="carousel-caption">
+                        <img class="img1" src="images/young-bearded-man-with-striped-shirt_273609-5677.avif">
+                        <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam non dolore deleniti eaque labore accusamus id autem quos. Culpa illo recusandae provident itaque pariatur quae dolorem ex reiciendis cum blanditiis?"</p>
+                        <h5>Shon</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      
+
+      <section id="contact-section" class = "contact-section section-padding">
+        <div class = "contact-bg">
+          <h2>Get in <span class="text-warning">Touch with Us</span></h2>
+          <!-- <h2>contact us</h2>
+          <div class = "line">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div> -->
+          <p class = "text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda iste facilis quos impedit fuga nobis modi debitis laboriosam velit reiciendis quisquam alias corporis, maxime enim, optio ab dolorum sequi qui.</p>
+        </div>
+  
+  
+        <div class = "contact-body">
+          <div class = "contact-info">
+            <div>
+              <span><i class = "fas fa-mobile-alt"></i></span>
+              <span>Phone No.</span>
+              <span class = "text">1-2392-23928-2</span>
+            </div>
+            <div>
+              <span><i class = "fas fa-envelope-open"></i></span>
+              <span>E-mail</span>
+              <span class = "text">mail@company.com</span>
+            </div>
+            <div>
+              <span><i class = "fas fa-map-marker-alt"></i></span>
+              <span>Address</span>
+              <span class = "text">2939 Patrick Street, Vicotria TX, United States</span>
+            </div>
+            <div>
+              <span><i class = "fas fa-clock"></i></span>
+              <span>Opening Hours</span>
+              <span class = "text">Monday - Friday (9:00 AM to 5:00 PM)</span>
+            </div>
+          </div>
+  
+          <!-- <div class = "contact-form">
+            <form>
+              <div>
+                <input type = "text" class = "form-control" placeholder="First Name">
+                <input type = "text" class = "form-control" placeholder="Last Name">
+              </div>
+              <div>
+                <input type = "email" class = "form-control" placeholder="E-mail">
+                <input type = "text" class = "form-control" placeholder="Phone">
+              </div>
+              <textarea rows = "5" placeholder="Message" class = "form-control"></textarea>
+              <input type = "submit" class = "send-btn" value = "send message">
+            </form>
+  
+            <div>
+              <img src = "image/contact-png.png" alt = "">
+            </div>
+          </div>
+        </div> -->
+  
+        <div class = "map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d223700.1490386933!2d-97.11558670486288!3d28.829485511234168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864266db2e2dac3b%3A0xeee20d566f63267d!2sVictoria%2C%20TX%2C%20USA!5e0!3m2!1sen!2snp!4v1604921178092!5m2!1sen!2snp" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+  
+        <!-- <div class = "contact-footer">
+          <h3>Follow Us</h3>
+          <div class = "social-links">
+            <a href = "#" class = "fab fa-facebook-f"></a>
+            <a href = "#" class = "fab fa-twitter"></a>
+            <a href = "#" class = "fab fa-instagram"></a>
+            <a href = "#" class = "fab fa-linkedin"></a>
+            <a href = "#" class = "fab fa-youtube"></a>
+          </div>
+        </div> -->
+      </section>
+
+      <section id="footer" style="background-color: black;">
+        <div class="footer py-5 section-padding">
+          <div class="container">
+            <div class = "social-links">
+              <a href = "#" class = "fab fa-facebook-f"></a>
+              <a href = "#" class = "fab fa-twitter"></a>
+              <a href = "#" class = "fab fa-instagram"></a>
+              <a href = "#" class = "fab fa-linkedin"></a>
+              <a href = "#" class = "fab fa-youtube"></a>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="footer-copy">
+              <div class="copy-right text-center pt-5">
+                <p class="text-light">© 2021 Lemon Caters. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     
-    </section>  
- <!-- header -->
 
- <section class="hero">
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-8 mx-auto text-center heroh1p">
-              <h1 class="mb-4">Lorem ipsum dolor</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod magna et lorem tincidunt, vel aliquet velit bibendum. Sed euismod nunc vel augue bibendum, non bibendum sapien tincidunt. </p>
-              <a href="#about"><button class="btn btn-lg btn1">Learn More</button></a>
-              <button class="btn btn-outline-dark btn-lg ms-3">Contact Us</button>
-          </div>
-      </div>
-  </div>
-</section>
-
-<section class="about-us" id="about">
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-6">
-              <h2>ABOUT US</h2> <br>
-              <p>We are a catering company that specializes in providing delicious food for all types of events. Our team of experienced chefs and event planners work together to create custom menus that are tailored to your specific needs and preferences.</p>
-              <p>Whether you're planning a wedding, corporate event, or private party, we have the expertise and resources to make your event a success. Contact us today to learn more about our services and how we can help make your next event unforgettable.</p>
-          </div>
-          <div class="col-lg-6">
-              <img src="images/chuttersnap-aEnH4hJ_Mrs-unsplash.jpg" class="img-fluid about-us-img" alt="Catering Team">
-          </div>
-      </div>
-  </div>
-</section>
-
-
-
- <!-- <section class="featured-event">
-  <h2>Our Services</h2>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="card">
-          <img src="https://via.placeholder.com/300" alt="image" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Featured Event 1</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod eu lorem et ultricies. In porta lorem at dui semper porttitor. Nullam quis cursus dui. Cras tincidunt vehicula tellus eu facilisis. Donec nisi turpis, iaculis et arcu a, aliquet ultrices nisl. Nam in pharetra odio, ac blandit metus. Suspendisse potenti. Praesent elementum diam non orci cursus rutrum.</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img src="https://via.placeholder.com/300" alt="image" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Featured Event 2</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod eu lorem et ultricies. In porta lorem at dui semper porttitor. Nullam quis cursus dui. Cras tincidunt vehicula tellus eu facilisis. Donec nisi turpis, iaculis et arcu a, aliquet ultrices nisl. Nam in pharetra odio, ac blandit metus. Suspendisse potenti. Praesent elementum diam non orci cursus rutrum.</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img src="https://via.placeholder.com/300" alt="image" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Featured Event 3</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod eu lorem et ultricies. In porta lorem at dui semper porttitor. Nullam quis cursus dui. Cras tincidunt vehicula tellus eu facilisis. Donec nisi turpis, iaculis et arcu a, aliquet ultrices nisl. Nam in pharetra odio, ac blandit metus. Suspendisse potenti. Praesent elementum diam non orci cursus rutrum.</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card">
-          <img src="https://via.placeholder.com/300" alt="image" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Featured Event 4</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod eu lorem et ultricies. In porta lorem at dui semper porttitor. Nullam quis cursus dui. Cras tincidunt vehicula tellus eu facilisis. Donec nisi turpis, iaculis et arcu a, aliquet ultrices nisl. Nam in pharetra odio, ac blandit metus. Suspendisse potenti. Praesent elementum diam non orci cursus rutrum.</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<section class="services-section" id="services">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h2>OUR SERVICES</h2> <br>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 col-md-6">
-        <div class="card service-item d-flex justify-content-center align-items-center">
-          <!-- <i class="fas fa-utensils"></i> -->
-          <div class="card-body">
-            <h3>Catering Services</h3>
-            <p>We offer a wide range of catering services for all types of events. From weddings to corporate events, we can help make your event a success.</p>
-            <button type="button" class="btn btn3 hover-btn w-100">LEARN MORE</button>
-            <div class="hidden-content">
-              <p>This is some hidden content that will appear when the card is expanded.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="card service-item d-flex justify-content-center align-items-center">
-          <!-- <i class="fas fa-glass-cheers"></i> -->
-          <div class="card-body">
-            <h3>Bartending Services</h3>
-            <p>We also offer bartending services for your event. Our experienced bartenders can create custom cocktails and drinks that will impress your guests.</p>
-            <button type="button" class="btn btn3 hover-btn w-100">LEARN MORE</button>
-            <div class="hidden-content">
-              <p>This is some hidden content that will appear when the card is expanded.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="card service-item d-flex justify-content-center align-items-center">
-           <!-- <i class="fas fa-birthday-cake"></i> -->
-          <div class="card-body">
-            <h3>Custom Cakes</h3>
-            <p>Looking for a custom cake for your event? We can help! Our experienced bakers can create a cake that is both beautiful and delicious.</p>
-            <button type="button" class="btn btn3 hover-btn w-100">LEARN MORE</button>
-            <div class="hidden-content">
-              <p>This is some hidden content that will appear when the card is expanded.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="testimonials" class="testimonials1">
-  <h2>OUR CLIENT REVIEWS</h2>
-
-  <!-- Carousel wrapper -->
-<div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel" data-interval="3000"> 
-  <!-- Controls -->
-  <div class="d-flex justify-content-center mb-4">
-    <button class="carousel-control-prev" type="button" data-bs-target="#customerReviews" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#customerReviews" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <!-- Inner -->
-  <div class="carousel-inner py-4">
-    <!-- Single item -->
-    <div class="carousel-item active">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <img class="rounded-circle shadow-1-strong mb-4"
-              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar"
-              style="width: 150px;" />
-            <h5 class="mb-3">Anna Deynah</h5>
-            <p>Loreum</p>
-            <p class="text-muted">
-              <i class="fas fa-quote-left pe-2"></i>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
-              officiis hic tenetur quae quaerat ad velit ab hic tenetur.
-            </p>
-            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <img class="rounded-circle shadow-1-strong mb-4"
-              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
-              style="width: 150px;" />
-            <h5 class="mb-3">John Doe</h5>
-            <p>Loreum</p>
-            <p class="text-muted">
-              <i class="fas fa-quote-left pe-2"></i>
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-              suscipit laboriosam, nisi ut aliquid commodi.
-            </p>
-            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li>
-                <i class="fas fa-star-half-alt fa-sm"></i>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <img class="rounded-circle shadow-1-strong mb-4"
-              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
-              style="width: 150px;" />
-            <h5 class="mb-3">Maria Kate</h5>
-            <p>Loreum</p>
-            <p class="text-muted">
-              <i class="fas fa-quote-left pe-2"></i>
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-              praesentium voluptatum deleniti atque corrupti.
-            </p>
-            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="far fa-star fa-sm"></i></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Single item -->
-    <div class="carousel-item">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <img class="rounded-circle shadow-1-strong mb-4"
-              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(3).webp" alt="avatar"
-              style="width: 150px;" />
-            <h5 class="mb-3">John Doe</h5>
-            <p>Loreum</p>
-            <p class="text-muted">
-              <i class="fas fa-quote-left pe-2"></i>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
-              officiis hic tenetur quae quaerat ad velit ab hic tenetur.
-            </p>
-            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <img class="rounded-circle shadow-1-strong mb-4"
-              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp" alt="avatar"
-              style="width: 150px;" />
-            <h5 class="mb-3">Alex Rey</h5>
-            <p>Loreum</p>
-            <p class="text-muted">
-              <i class="fas fa-quote-left pe-2"></i>
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-              suscipit laboriosam, nisi ut aliquid commodi.
-            </p>
-            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li>
-                <i class="fas fa-star-half-alt fa-sm"></i>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <img class="rounded-circle shadow-1-strong mb-4"
-              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(5).webp" alt="avatar"
-              style="width: 150px;" />
-            <h5 class="mb-3">Maria Kate</h5>
-            <p>Loreum</p>
-            <p class="text-muted">
-              <i class="fas fa-quote-left pe-2"></i>
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-              praesentium voluptatum deleniti atque corrupti.
-            </p>
-            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="far fa-star fa-sm"></i></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Single item -->
-    <div class="carousel-item">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <img class="rounded-circle shadow-1-strong mb-4"
-              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(6).webp" alt="avatar"
-              style="width: 150px;" />
-            <h5 class="mb-3">Anna Deynah</h5>
-            <p>Loreum </p>
-            <p class="text-muted">
-              <i class="fas fa-quote-left pe-2"></i>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
-              officiis hic tenetur quae quaerat ad velit ab hic tenetur.
-            </p>
-            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <img class="rounded-circle shadow-1-strong mb-4"
-              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(8).webp" alt="avatar"
-              style="width: 150px;" />
-            <h5 class="mb-3">John Doe</h5>
-            <p>Loreum</p>
-            <p class="text-muted">
-              <i class="fas fa-quote-left pe-2"></i>
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-              suscipit laboriosam, nisi ut aliquid commodi.
-            </p>
-            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li>
-                <i class="fas fa-star-half-alt fa-sm"></i>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 d-none d-lg-block">
-            <img class="rounded-circle shadow-1-strong mb-4"
-              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(7).webp" alt="avatar"
-              style="width: 150px;" />
-            <h5 class="mb-3">Maria Kate</h5>
-            <p>Loreum</p>
-            <p class="text-muted">
-              <i class="fas fa-quote-left pe-2"></i>
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-              praesentium voluptatum deleniti atque corrupti.
-            </p>
-            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="fas fa-star fa-sm"></i></li>
-              <li><i class="far fa-star fa-sm"></i></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Inner -->
-</div>
-<!-- Carousel wrapper -->
-
-</section>
-
-
-  <script src="https://kit.fontawesome.com/898072a066.js" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

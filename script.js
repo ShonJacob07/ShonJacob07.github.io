@@ -1,30 +1,20 @@
-// window.addEventListener("scroll", function() {
-//     var navbar = document.querySelector(".navbar");
-//     navbar.classList.toggle("fixed", window.scrollY > 0);
-//   });
-
-const cards = document.querySelectorAll('.card');
-const buttons = document.querySelectorAll('.hover-btn');
-
-buttons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-        cards[index].classList.add('active');
-        button.remove();
-
-        const closeBtn = document.createElement('button');
-        closeBtn.classList.add('btn', 'btn-danger', 'close-btn');
-        closeBtn.innerHTML = '&times;';
-
-        cards[index].appendChild(closeBtn);
-
-        closeBtn.addEventListener('click', () => {
-            cards[index].classList.remove('active');
-            closeBtn.remove();
-            cards[index].querySelector('.card-body').appendChild(button);
-            cards[index].querySelector('.hidden-content').style.display = 'none';
-        });
-
-        cards[index].querySelector('.hidden-content').style.display = 'block';
-    });
+document.addEventListener("DOMContentLoaded", () => {
+    function counter(id,start,end,duration){
+        let obj = document.getElementById(id),
+        current = start,
+        range = end - start,
+        increment = end > start ? 1 : -1,
+        step = Math.abs(Math.floor(duration / range )),
+        timer = setInterval(() => {
+            current += increment;
+            obj.textContent = current;
+            if(current == end){
+                clearInterval(timer);
+            }
+        }, step);
+    }
+    counter("count1", 0, 5, 3000);
+    counter("count2", 500, 1000, 2500);
+    counter("count3", 0, 500, 3000);
+    counter("count4", 0 , 7110, 3000);
 });
-
