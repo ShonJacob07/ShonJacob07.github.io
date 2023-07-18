@@ -201,8 +201,8 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .testimonial-section .carousel-caption .img1{
-    max-width: 5rem;
-    border-radius: 50%;
+    max-width: 6rem;
+    border-radius: 80%;
     padding: 0.3125rem;
 }
 
